@@ -116,14 +116,9 @@ form {
   cursor: pointer;
 }
 
-.lower {
-    width:100%;
-    height:91vh;
-    padding: 0%;
-}
-
 .allposts {
     display: grid;
+    flex-wrap: wrap;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 5px;
     justify-items: center;
@@ -135,11 +130,11 @@ form {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     background-color: hwb(0 96% 4%);
-    width: 80%; 
     display: flex;
     border-radius: 15px;
-    margin: 10px;
+    margin: 20px 55px;
     line-height: 20px; 
+    height: fit-content;
 } 
   
   /* On mouse-over, add a deeper shadow */
