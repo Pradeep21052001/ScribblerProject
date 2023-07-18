@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./styles/index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wholepage">
+        <div class="upper">
+            <div>
+                <h1 id="logo">Scribbler</h1>
+                <p id="logo1">Explore, Imagine, Create</p>
+            </div>
+            <div class="signs">
+                <button id="sign-up" class="sign">Sign Up</button>
+
+                <div id="signup-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2 class="modal-head">Get started</h2>
+                        <form>
+                            <label>Name</label>
+                            <input type="text" required placeholder="Enter your name">
+                            <label>Username</label>
+                            <input type="text" required placeholder="Enter your username">
+                            <label>Password</label>
+                            <input type="password" required placeholder="Enter ypur password">
+                            <label>Confirm password</label>
+                            <input type="password" required placeholder="Re-enter ypur password">
+                            <button id="sign-submit" type="submit">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+
+                <button class="sign" id="sign-in">Sign in</button>
+
+                <div id="signin-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close1">&times;</span>
+                        <h2 class="modal-head">Welcome Back!</h2>
+                        <form>
+                            <label>Username</label>
+                            <input type="text" required placeholder="Enter your username">
+                            <label>Password</label>
+                            <input type="password" required placeholder="Enter ypur password">
+                            <button id="sign-submit" type="submit">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="lower">
+            <div class="posts">
+                <button id="allposts" class="postbtn">
+                    <a href="./html/postslist.html" id="anchor">All Posts</a>
+                </button>
+
+                <button id="createpost" class="postbtn">Create Post</button>
+
+                <div id="createpost-modal" class="modal">
+                    <div class="modal-content2">
+                        <span class="close2">&times;</span>
+                        <h2 class="modal-head">Pen Your Post</h2>
+                        <form id="create-form">
+                            <label>Title</label>
+                            <input type="text" placeholder="Enter title of your post">
+                            <label>Contents</label>
+                            <textarea rows="10" cols="50" placeholder="Enter the contents of your post"></textarea> 
+                            <div id="create-btn-container">
+                                <button id="create-btn" type="submit">Create</button>
+                            </div>               
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>

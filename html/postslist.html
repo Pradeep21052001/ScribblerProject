@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Postlist page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles/postlist.css" />
+</head>
+
+<body>
+    <div class="lower">
+        <div class="upper">
+            <div>
+                <h1 id="logo">Scribbler</h1>
+                <p id="logo1">Explore, Imagine, Create</p>
+            </div>
+            <div class="signs">
+                <button id="sign-up" class="sign">Sign Up</button>
+
+                <div id="signup-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2 class="modal-head">Get started</h2>
+                        <form>
+                            <label>Name</label>
+                            <input type="text" required placeholder="Enter your name">
+                            <label>Username</label>
+                            <input type="text" required placeholder="Enter your username">
+                            <label>Password</label>
+                            <input type="password" required placeholder="Enter ypur password">
+                            <label>Confirm password</label>
+                            <input type="password" required placeholder="Re-enter ypur password">
+                            <button id="sign-submit" type="submit">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+
+                <button class="sign" id="sign-in">Sign in</button>
+
+                <div id="signin-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close1">&times;</span>
+                        <h2 class="modal-head">Welcome Back!</h2>
+                        <form>
+                            <label>Username</label>
+                            <input type="text" required placeholder="Enter your username">
+                            <label>Password</label>
+                            <input type="password" required placeholder="Enter ypur password">
+                            <button id="sign-submit" type="submit">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="allposts">
+            <!-- post 1 starts here -->
+            <div class="card">
+                <div class="left">
+                    <p>Srishti Gupta</p>
+                </div>
+
+                <div class="right">
+                    <div>
+                        <p class="head">‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
+                        <span class="trash">
+                            <i id="trashIcon1" class="fa fa-trash"></i>
+                            <!-- TODO: Include Font Awesome icon for delete icon here -->
+                        </span>
+                    </div >
+                    <p class="para">Since JavaScript does not have any type-checking, either of these keywords can be used to declare
+                        a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the
+                        same purpose, they are different.</p>
+                    <span class="elipsis">
+                        <i class="fa fa-ellipsis"></i>
+                        <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    </span>
+                </div>
+            </div>
+            <!-- post 1 ends here -->
+
+            <!-- post 2 starts here -->
+            <div class="card">
+                <div class="left">
+                    <p>Colby Fayock</p>
+                </div>
+
+                <div class="right">
+                    <div>
+                        <p class="head">What is linting and how can it save you time?</p>
+                        <span class="trash">
+                            <i id="trashIcon2" class="fa fa-trash"></i>
+                        </span>
+                    </div>
+                    <p class="para">One of the biggest challenges in software development is time. It’s something we can’t easily get
+                        more of, but linting can help us make the most out of the time we have.</p>
+                    <span class="elipsis">
+                        <i class="fa fa-ellipsis"></i>
+                        <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    </span>
+                </div>
+            </div>
+            <!-- post 2 ends here -->
+
+            <!-- post 3 starts here -->
+            <div class="card">
+                <div class="left">
+                    <p>Yazeed Bzadough</p>
+                </div>
+
+                <div class="right">
+
+                    <div>
+                        <p class="head">How to Get More Views on Your Tech Blog</p>
+                        <span class="trash">
+                            <i id="trashIcon3" class="fa fa-trash"></i>
+                        </span>
+                    </div>
+                    <p class="para">If you're a developer with a Twitter account, you've already seen everyone and their cat start a
+                        blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a
+                        recognizable name in the industry.</p>
+                    <span class="elipsis">
+                        <i class="fa fa-ellipsis"></i>
+                        <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    </span>
+                </div>
+            </div>
+            <!-- post 3 ends here -->
+
+            <!-- post 4 starts here -->
+            <div class="card">
+                <div class="left">
+                    <p>Cedd Burge</p>
+                </div>
+
+                <div class="right">
+
+                    <div>
+                        <p class="head">How to write easily describable code</p>
+                        <span class="trash">
+                            <i id="trashIcon4" class="fa fa-trash"></i>
+                        </span>
+                    </div>
+                    <p class="para">When code is not describable using words, most people have to do some mental mapping to turn it
+                        in to words. This wastes mental energy, and you run the risk of getting the mapping wrong.
+                        Different people will map to different words, which
+                        leads to confusion when discussing the code.</p>
+                    <span class="elipsis">
+                        <i class="fa fa-ellipsis"></i>
+                        <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    </span>
+                </div>
+            </div>
+            
+            <!-- post 4 ends here -->
+
+            <!-- post 5 starts here -->
+            <div class="card">
+                <div class="left">
+                    <p>Srishti Gupta</p>
+                </div>
+
+                <div class="right">
+                    <div>
+                        <p class="head">Everything you should know about ‘module’ & ‘require’ in Node.js</p>
+                        <span class="trash">
+                            <i id="trashIcon5" class="fa fa-trash"></i>
+                        </span>
+                    </div>
+
+                    <p class="para">Node.js treats each JavaScript file as a separate module. For instance, if you have a file
+                        containing some code and this file is named xyz.js, then this file is treated as a module in
+                        Node, and you can say that you’ve created a module
+                        named xyz.</p>
+                    <span class="elipsis">
+                        <i class="fa fa-ellipsis"></i>
+                        <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    </span>
+                </div>
+            </div>
+            <!-- post 5 ends here -->
+
+            <div id="trashModal" class="modal">
+                <div class="trashmodal-content">
+                    <p id="delete-confirm">Are you sure want to delete this post?</p>
+                    <div class="btn-container">
+                        <button id="yesButton">Yes</button>
+                        <button id="noButton">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../scripts/postlist.js"></script>
+</body>
+
+</html>
