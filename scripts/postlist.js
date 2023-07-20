@@ -2,125 +2,115 @@ var modal = document.getElementById("signup-modal");
 var signUpButton = document.getElementById("sign-up");
 var closeBtn = document.getElementsByClassName("close")[0];
 
-signUpButton.onclick = function() {
+signUpButton.onclick = function () {
   modal.style.display = "block";
 };
 
-closeBtn.onclick = function() {
+closeBtn.onclick = function () {
   modal.style.display = "none";
 };
 
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
+};
 
 var modal1 = document.getElementById("signin-modal");
 var signInButton = document.getElementById("sign-in");
 var closeBtn1 = document.getElementsByClassName("close1")[0];
 
-signInButton.onclick = function() {
+signInButton.onclick = function () {
   modal1.style.display = "block";
 };
 
-closeBtn1.onclick = function() {
+closeBtn1.onclick = function () {
   modal1.style.display = "none";
 };
 
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == modal1) {
     modal1.style.display = "none";
   }
 };
 
 
-var trashButton1 = document.getElementById("trashIcon1");
-var trash1 = document.getElementById("trashModal1");
-var yes1 = document.getElementById("yesButton1");
-var no1 = document.getElementById("noButton1");
+var posts = [
+  {
+    id: 1,
+    author: "Srishti Gupta",
+    title: "‘let’ me be a ‘const’(ant), not a ‘var’(iable)!",
+    content: "Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.",
+  },
+  {
+    id: 2,
+    author: "Colby Fayock",
+    title: "What is linting and how can it save you time?",
+    content: "One of the biggest challenges in software development is time. It’s something we can’t easily getmore of, but linting can help us make the most out of the time we have.",
+  },
+  {
+    id: 3,
+    author: "Yazeed Bzadough",
+    title: "How to Get More Views on Your Tech Blog",
+    content: "If you're a developer with a Twitter account, you've already seen everyone and their cat start ablog, YouTube channel, or Patreon. We all want to become stars, or at the very least, arecognizable name in the industry.",
+  },
+  {
+    id: 4,
+    author: "Cedd Burge",
+    title: "How to write easily describable code",
+    content: "When code is not describable using words, most people have to do some mental mapping to turn itin to words. This wastes mental energy, and you run the risk of getting the mapping wrong.Different people will map to different words, whichleads to confusion when discussing the code.",
+  },
+  {
+    id: 5,
+    author: "Srishti Gupta",
+    title: "Everything you should know about ‘module’ & ‘require’ in Node.js",
+    content: "Node.js treats each JavaScript file as a separate module. For instance, if you have a filecontaining some code and this file is named xyz.js, then this file is treated as a module inNode, and you can say that you’ve created a modulenamed xyz.",
+  },
+];
 
-trashButton1.onclick = function() {
-    trash1.style.display = "block";
-};
-yes1.onclick = function() {
-    trash1.style.display = "none";
-    card1.style.display = "none";
+showPosts();
+
+function showPosts() {
+  posts.forEach(function (value, index) {
+    var cardTemplate = ` 
+    <div class="card" id="card${value.id}">
+    <div class="left">
+        <p>${value.author}</p>
+    </div>
+
+    <div class="right">
+        <div>
+            <p class="head">${value.title}</p>
+            <span class="trash">
+                <i id="trashIcon${value.id}" onclick="trashClicked(${value.id})" class="fa fa-trash"></i>
+            </span>
+        </div >
+        <p class="para">${value.content}</p>
+        <br/>
+        <span class="elipsis">
+            <i id=${value.id} class="fa fa-ellipsis" onclick="viewPost(${value.id})"></i>   
+        </span>
+    </div>
+    </div>
+    `
+    var allPosts = document.getElementById("allPosts");
+    allPosts.innerHTML += cardTemplate;
+  });
 };
 
-no1.onclick = function() {
-    trash1.style.display = "none";
+var deleteCardId; 
+var trash = document.getElementById('trashModal');
+function trashClicked(id) {
+    trash.style.display = 'block';
+    deleteCardId = id;
+};
+
+function deletePost() {
+    var remove = document.getElementById(`card${deleteCardId}`);
+    trash.style.display = 'none';
+    remove.style.display = 'none';
 }
 
-var trashButton2 = document.getElementById("trashIcon2");
-var trash2 = document.getElementById("trashModal2");
-var yes2 = document.getElementById("yesButton2");
-var no2 = document.getElementById("noButton2");
-
-trashButton2.onclick = function() {
-    trash2.style.display = "block";
+function revert() {
+  trash.style.display = 'none';
 };
-yes2.onclick = function() {
-    trash2.style.display = "none";
-    card2.style.display = "none";
-};
-
-no2.onclick = function() {
-    trash2.style.display = "none";
-}
-
-var trashButton3 = document.getElementById("trashIcon3");
-var trash3 = document.getElementById("trashModal3");
-var yes3 = document.getElementById("yesButton3");
-var no3 = document.getElementById("noButton3");
-
-trashButton3.onclick = function() {
-    trash3.style.display = "block";
-};
-
-yes3.onclick = function() {
-    trash3.style.display = "none";
-    card3.style.display = "none";
-};
-
-no3.onclick = function() {
-    trash3.style.display = "none";
-};
-
-var trashButton4 = document.getElementById("trashIcon4");
-var trash4 = document.getElementById("trashModal4");
-var yes4 = document.getElementById("yesButton4");
-var no4 = document.getElementById("noButton4");
-
-trashButton4.onclick = function() {
-    trash4.style.display = "block";
-};
-
-yes4.onclick = function() {
-    trash4.style.display = "none";
-    card4.style.display = "none";
-};
-
-no4.onclick = function() {
-    trash4.style.display = "none";
-};
-
-var trashButton5 = document.getElementById("trashIcon5");
-var trash5 = document.getElementById("trashModal5");
-var yes5 = document.getElementById("yesButton5");
-var no5 = document.getElementById("noButton5");
-
-trashButton5.onclick = function() {
-    trash5.style.display = "block";
-};
-
-yes5.onclick = function() {
-    trash5.style.display = "none";
-    card5.style.display = "none";
-};
-
-no5.onclick = function() {
-    trash5.style.display = "none";
-};
-
-
