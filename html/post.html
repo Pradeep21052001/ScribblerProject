@@ -4,10 +4,11 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Home page</title>
+    <title>post</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="../styles/post.css" />
 </head>
 
@@ -55,6 +56,25 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="post-details">
+            <h1 id="post-title"  contenteditable="false"></h1>
+            <p id="post-author"></p>
+            <span>
+                <button id="edit-button" class="save-edit" onclick="handleEdit()">Edit<i class="fa fa-pen-to-square"></i></button>
+            </span>
+            <p id="post-content"  contenteditable="false"></p>
+    
+            <!-- Like section -->
+       
+            <button id="like-button" class="like-button" onclick="handleLike()"> Like</button>
+            <div id="like-count"></div>
+        
+            <!-- Comment section -->
+            <textarea rows="3" cols="205" id="comment-input" placeholder="Leave a comment..."></textarea> 
+            <button class="comment-button" onclick="handleAddComment()">Comment</button>
+            <div id="all-comments">All comments</div>
+            <ul id="comments-list" class="comments-list"></ul>
         </div>
     </div>
     <script src="../scripts/post.js"></script>

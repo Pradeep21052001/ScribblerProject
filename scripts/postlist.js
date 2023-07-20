@@ -68,9 +68,9 @@ var posts = [
   },
 ];
 
-showPosts();
+renderPosts();
 
-function showPosts() {
+function renderPosts() {
   posts.forEach(function (value, index) {
     var cardTemplate = ` 
     <div class="card" id="card${value.id}">
@@ -99,18 +99,24 @@ function showPosts() {
 };
 
 var deleteCardId; 
-var trash = document.getElementById('trashModal');
+var trashModal = document.getElementById('trashModal');
 function trashClicked(id) {
-    trash.style.display = 'block';
+    trashModal.style.display = 'block';
     deleteCardId = id;
 };
 
 function deletePost() {
     var remove = document.getElementById(`card${deleteCardId}`);
-    trash.style.display = 'none';
-    remove.style.display = 'none';
+    trashModal.style.display = 'none';
+    remove.remove();
 }
 
 function revert() {
-  trash.style.display = 'none';
+  trashModal.style.display = 'none';
 };
+
+function viewPost(postId) {
+  // Encode the post ID to handle special characters in URLs
+  const encodedPostId = encodeURIComponent(postId);
+  window.location.href = `post.html?id=${encodedPostId}`;
+}
