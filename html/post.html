@@ -53,25 +53,29 @@
                             <input type="password" required placeholder="Enter ypur password">
                             <button id="sign-submit" type="submit">Sign Up</button>
                         </form>
+                        <div class="signup-redirect">Not a member? <button class="signup-redirectButton"
+                                onclick="signupRedirectButton()">Sign Up</button></div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="post-details">
-            <h1 id="post-title"  contenteditable="false"></h1>
+            <h1 id="post-title" contenteditable="false"></h1>
             <p id="post-author"></p>
             <span>
-                <button id="edit-button" class="save-edit" onclick="handleEdit()">Edit<i class="fa fa-pen-to-square"></i></button>
+                <button id="edit-button" class="save-edit" onclick="handleEdit()">Edit <i
+                        class="fa fa-pen-to-square"></i></button>
             </span>
-            <p id="post-content"  contenteditable="false"></p>
-    
+            <p id="post-content" contenteditable="false"></p>
+
             <!-- Like section -->
-       
-            <button id="like-button" class="like-button" onclick="handleLike()"> Like</button>
+
+            <button id="like-button" class="like-button" onclick="handleLike()"><i class="fa fa-thumbs-up"></i>
+                Like</button>
             <div id="like-count"></div>
-        
+
             <!-- Comment section -->
-            <textarea rows="3" cols="205" id="comment-input" placeholder="Leave a comment..."></textarea> 
+            <textarea rows="3" cols="205" id="comment-input" placeholder="Leave a comment..."></textarea>
             <button class="comment-button" onclick="handleAddComment()">Comment</button>
             <div id="all-comments">All comments</div>
             <ul id="comments-list" class="comments-list"></ul>

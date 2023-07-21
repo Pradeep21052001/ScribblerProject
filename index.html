@@ -19,7 +19,7 @@
                 <p id="logo1">Explore, Imagine, Create</p>
             </div>
             <div class="signs">
-                <button id="sign-up" class="sign">Sign Up</button>
+                <button class="sign" id="sign-up">Sign Up</button>
 
                 <div id="signup-modal" class="modal">
                     <div class="modal-content">
@@ -52,6 +52,8 @@
                             <input type="password" required placeholder="Enter ypur password">
                             <button id="sign-submit" type="submit">Sign Up</button>
                         </form>
+                        <div class="signup-redirect">Not a member? <button class="signup-redirectButton"
+                                onclick="signupRedirectButton()">Sign Up</button></div>
                     </div>
                 </div>
 
@@ -73,10 +75,11 @@
                             <label>Title</label>
                             <input type="text" placeholder="Enter title of your post">
                             <label>Contents</label>
-                            <textarea rows="10" cols="50" id="comment-input" placeholder="Enter the contents of your post"></textarea> 
+                            <textarea rows="10" cols="50" id="comment-input"
+                                placeholder="Enter the contents of your post"></textarea>
                             <div id="create-btn-container">
                                 <button id="create-btn" type="submit">Create</button>
-                            </div>               
+                            </div>
                         </form>
                     </div>
                 </div>

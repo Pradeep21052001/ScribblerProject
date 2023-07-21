@@ -2,28 +2,33 @@
     margin: 0px;
     background-image: url("../images/background.jpg");
     background-size: cover;
-    background-position: center;   
+    background-position: center;
 }
+
 body {
     margin: 0px;
 }
+
 #logo {
     font-family: 'Montez', cursive;
-    border : 0px;
+    border: 0px;
     color: blue;
     margin: 0px;
 }
+
 #logo1 {
     font-family: 'Ubuntu Mono', cursive;
     margin: 0px;
 }
-.signs{
+
+.signs {
     position: absolute;
     top: 0;
-    right:0;
+    right: 0;
     padding: 2px;
-    margin: 0.5% 0.5% 0% 0% ;
+    margin: 0.5% 0.5% 0% 0%;
 }
+
 .sign {
     color: white;
     background-color: blue;
@@ -31,88 +36,125 @@ body {
     border: 0;
     width: 70px;
     padding: 10px;
-    margin : 3px;
+    margin: 3px;
     cursor: pointer;
 }
-input{
-    padding:5px;
+
+.signup-redirectButton {
+    padding: 0;
+    color: blue;
+    font-weight: bolder;
+    margin: 0;
+    border: 0;
+    font-family: Arial, sans-serif;
+}
+
+.signup-redirect {
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 13px;
+}
+
+input {
+    padding: 5px;
     background-color: hsl(0, 6%, 91%);
     margin: 0px;
     border: 0;
 }
-textarea{
-    padding:5px;
+
+textarea {
+    padding: 5px;
     background-color: hsl(0, 6%, 91%);
     margin: 0px;
     border: 0;
     font-family: Arial, sans-serif;
 }
-#sign-submit{
+
+#sign-submit {
     margin: 10px 0;
     background-color: green;
     color: white;
     padding: 5px;
 }
+
 label {
     margin: 10px 0;
     font-family: sans-serif;
 }
+
 .upper {
-    width:99%;
-    height:8vh;
-    border :0%;
-    margin: 0.5% 0% 0% 0.5% ;
+    width: 99%;
+    height: 8vh;
+    border: 0%;
+    margin: 0.5% 0% 0% 0.5%;
 }
+
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  .modal-head {
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.modal-head {
     margin-top: 0px;
     margin-bottom: 5px;
     border-bottom: 1px solid black;
     font-family: sans-serif;
 }
+
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto;
+    /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 20%; /* Could be more or less, depending on screen size */
+    width: 20%;
 }
+
 form {
-    display : flex;
+    display: flex;
     background-color: white;
     flex-direction: column;
     justify-content: center;
-    margin-top: 10px;    
+    margin-top: 10px;
 }
+
 .close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
+
 .close:hover,
 .close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .lower {
-    width:100%;
-    height:91vh;
+    width: 100%;
+    height: 91vh;
     padding: 0%;
 }
+
 .postbtn {
     color: black;
     background-color: #fafa0a;
@@ -121,64 +163,76 @@ form {
     border-color: white;
     width: 100px;
     padding: 10px;
-    margin : 10px;
+    margin: 10px;
     cursor: pointer;
 }
+
 .posts {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;  
+    height: 100%;
 }
 
 .modal-content1 {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto;
+    /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 80%;
+    /* Could be more or less, depending on screen size */
 }
+
 .close1 {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
+
 .close1:hover,
 .close1:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
+
 .modal-content2 {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto;
+    /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 80%;
 }
+
 .close2 {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
+
 .close2:hover,
 .close2:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
+
 a {
     text-decoration: none;
 }
-#create-btn{
+
+#create-btn {
     background-color: green;
     color: white;
     width: 10%;
     padding: 5px;
     margin: 10px 0;
 }
+
 #create-btn-container {
     display: flex;
     justify-content: center;
